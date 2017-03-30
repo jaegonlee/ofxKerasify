@@ -46,6 +46,6 @@ output.resize(10); // output vector should be [10]. because we have 10 digits! ;
 kerasify.predict(input, output);
 ```
 
-7. Voi lla!
+7. Voila!
 
 ![screenshot](./screenshot_example-mnist.png "screenshot")
