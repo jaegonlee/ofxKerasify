@@ -1,0 +1,3 @@
+[submodule "lib/kerasify"]
+	path = lib/kerasify
+	url = http://github.com/naotokui/kerasify
