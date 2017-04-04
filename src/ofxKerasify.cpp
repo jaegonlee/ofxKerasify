@@ -26,12 +26,16 @@ bool ofxKerasify::loadModel(const string &filename){
     return true;
 }
 
-bool ofxKerasify::predict(const std::vector<float> input, std::vector<float> &output){
+bool ofxKerasify::predict(const std::vector<int> input_dim, const std::vector<float> input,
+                          const std::vector<int> output_dim, std::vector<float> &output){
     
-    Tensor in(1, input.size());
+    Tensor in;
+    in.dims_ = input_dim;
     in.data_ = input;
     
-    Tensor out(1, output.size());
+    Tensor out;
+    out.dims_ = output_dim;
+    out.data_ = output;
     
     bool result = model.Apply(&in, &out);
     if (result != true){

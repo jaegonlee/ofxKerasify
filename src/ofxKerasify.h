@@ -19,7 +19,8 @@ public:
     ~ofxKerasify();
     
     bool loadModel(const string& filename);
-    bool predict(const std::vector<float> input, std::vector<float> &output);
+    bool predict(const vector<int> input_dim, const vector<float> input,
+                              const vector<int> output_dim, vector<float> &output);
 
 private:
     
