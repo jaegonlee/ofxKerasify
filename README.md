@@ -1,13 +1,17 @@
 # ofxKerasify
 openFrameworks addon for Running trained Keras Deep Learning models in C++.  
 
-based on moof2k's wonderful kerasify project
+based on moof2k's wonderful kerasify project.
 [https://github.com/moof2k/kerasify](https://github.com/moof2k/kerasify)
 
 
 # Disclaimer  
 
-kerasify supports only a subset of keras layers. I'm working on more layers!
+* kerasify supports only a subset of keras layers. I'm working on more layers!
+* not thread safe
+
+* oF-iOS compatible
+* Working on [BLAS Optimization through Accelerate.framework](https://github.com/naotokui/kerasify/tree/BLAS)
 
 
 # Example: MNIST MLP (example-mnist_mlp)
