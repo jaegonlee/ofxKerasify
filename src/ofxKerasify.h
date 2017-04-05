@@ -10,7 +10,7 @@
 
 // openFrameworks
 #include "ofMain.h"
-#include "keras_model.h"
+#include "KerasModel_.h"
 
 class ofxKerasify {
     
@@ -21,9 +21,12 @@ public:
     bool loadModel(const string& filename);
     bool predict(const vector<int> input_dim, const vector<float> input,
                               const vector<int> output_dim, vector<float> &output);
-
+    
+    bool    isModelLoaded;
+    int     getNumberOfLayers();
+    bool    setLayerEnabled(int layerId, bool enabled);
+    void    reset(); // enable all layers
 private:
     
-    KerasModel model;
-    
+    KerasModel_ model;
 };
