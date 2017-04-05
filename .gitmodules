@@ -1,3 +1,4 @@
 [submodule "lib/kerasify"]
 	path = libs/kerasify
 	url = http://github.com/naotokui/kerasify
+	branch = BLAS
