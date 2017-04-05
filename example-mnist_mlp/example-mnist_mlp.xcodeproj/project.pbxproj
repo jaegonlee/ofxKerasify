@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35D285EA1E8CD6BB0015B452 /* keras_model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 35D285E21E8CD3580015B452 /* keras_model.cc */; };
+		0C3DDE853E73CAFD04244F0C /* keras_model.cc in Sources */ = {isa = PBXBuildFile; fileRef = 0B1483CD7FDC83E3FE138BC3 /* keras_model.cc */; };
+		1F9712B71DB983C05C545FB0 /* KerasModel_.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 337B1C12722E397BEBB756A6 /* KerasModel_.cpp */; };
 		604F26B56AFECEDB9502CCC1 /* ofxKerasify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6CC63977DC02B22CA89C6BE3 /* ofxKerasify.cpp */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
@@ -44,14 +45,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		35D285E21E8CD3580015B452 /* keras_model.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = keras_model.cc; sourceTree = "<group>"; };
-		35D285E31E8CD3580015B452 /* keras_model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = keras_model.h; sourceTree = "<group>"; };
-		35D285EB1E8CE8110015B452 /* kerasify.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = kerasify.py; sourceTree = "<group>"; };
+		0B1483CD7FDC83E3FE138BC3 /* keras_model.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = keras_model.cc; path = ../../../addons/ofxKerasify/libs/kerasify/keras_model.cc; sourceTree = SOURCE_ROOT; };
+		337B1C12722E397BEBB756A6 /* KerasModel_.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = KerasModel_.cpp; path = ../../../addons/ofxKerasify/src/KerasModel_.cpp; sourceTree = SOURCE_ROOT; };
 		6CC63977DC02B22CA89C6BE3 /* ofxKerasify.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxKerasify.cpp; path = ../../../addons/ofxKerasify/src/ofxKerasify.cpp; sourceTree = SOURCE_ROOT; };
+		73F2477088389AAD4A8179CD /* KerasModel_.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = KerasModel_.h; path = ../../../addons/ofxKerasify/src/KerasModel_.h; sourceTree = SOURCE_ROOT; };
+		9A66AF3E409F6FE3AB73642F /* keras_model.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = keras_model.h; path = ../../../addons/ofxKerasify/libs/kerasify/keras_model.h; sourceTree = SOURCE_ROOT; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E4B69B5B0A3A1756003C02F2 /* example-mnist_mlpDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "example-mnist_mlpDebug.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
-		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
+		E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofApp.cpp; path = src/ofApp.cpp; sourceTree = SOURCE_ROOT; };
 		E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = ofApp.h; path = src/ofApp.h; sourceTree = SOURCE_ROOT; };
 		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
 		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
@@ -74,29 +76,19 @@
 		0210042FAEA2F50F449DB43B /* ofxKerasify */ = {
 			isa = PBXGroup;
 			children = (
-				35D285DD1E8CD3580015B452 /* lib */,
 				EC69F780D4B35805EF69DA6E /* src */,
+				6E78BA811B5B803F1DE6CFE5 /* libs */,
 			);
 			name = ofxKerasify;
 			sourceTree = "<group>";
 		};
-		35D285DD1E8CD3580015B452 /* lib */ = {
+		0B505D92CB75E9202841B31E /* kerasify */ = {
 			isa = PBXGroup;
 			children = (
-				35D285DE1E8CD3580015B452 /* kerasify */,
+				0B1483CD7FDC83E3FE138BC3 /* keras_model.cc */,
+				9A66AF3E409F6FE3AB73642F /* keras_model.h */,
 			);
-			name = lib;
-			path = ../lib;
-			sourceTree = "<group>";
-		};
-		35D285DE1E8CD3580015B452 /* kerasify */ = {
-			isa = PBXGroup;
-			children = (
-				35D285EB1E8CE8110015B452 /* kerasify.py */,
-				35D285E21E8CD3580015B452 /* keras_model.cc */,
-				35D285E31E8CD3580015B452 /* keras_model.h */,
-			);
-			path = kerasify;
+			name = kerasify;
 			sourceTree = "<group>";
 		};
 		6948EE371B920CB800B5AC1A /* local_addons */ = {
@@ -104,6 +96,14 @@
 			children = (
 			);
 			name = local_addons;
+			sourceTree = "<group>";
+		};
+		6E78BA811B5B803F1DE6CFE5 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				0B505D92CB75E9202841B31E /* kerasify */,
+			);
+			name = libs;
 			sourceTree = "<group>";
 		};
 		BB4B014C10F69532006C3DED /* addons */ = {
@@ -157,6 +157,8 @@
 		EC69F780D4B35805EF69DA6E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				337B1C12722E397BEBB756A6 /* KerasModel_.cpp */,
+				73F2477088389AAD4A8179CD /* KerasModel_.h */,
 				6CC63977DC02B22CA89C6BE3 /* ofxKerasify.cpp */,
 				FE1847B6DDC4727FE7D11238 /* ofxKerasify.h */,
 			);
@@ -250,10 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35D285EA1E8CD6BB0015B452 /* keras_model.cc in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				1F9712B71DB983C05C545FB0 /* KerasModel_.cpp in Sources */,
 				604F26B56AFECEDB9502CCC1 /* ofxKerasify.cpp in Sources */,
+				0C3DDE853E73CAFD04244F0C /* keras_model.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +293,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../addons/ofxKerasify/libs,
+					../../../addons/ofxKerasify/libs/kerasify,
 					../../../addons/ofxKerasify/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -325,6 +330,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../addons/ofxKerasify/libs,
+					../../../addons/ofxKerasify/libs/kerasify,
 					../../../addons/ofxKerasify/src,
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
@@ -353,6 +360,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../addons/ofxKerasify/libs,
+					../../../addons/ofxKerasify/libs/kerasify,
 					../../../addons/ofxKerasify/src,
 				);
 				ICON = "$(ICON_NAME_DEBUG)";
@@ -381,6 +390,8 @@
 				HEADER_SEARCH_PATHS = (
 					"$(OF_CORE_HEADERS)",
 					src,
+					../../../addons/ofxKerasify/libs,
+					../../../addons/ofxKerasify/libs/kerasify,
 					../../../addons/ofxKerasify/src,
 				);
 				ICON = "$(ICON_NAME_RELEASE)";

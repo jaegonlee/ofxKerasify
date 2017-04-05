@@ -58,7 +58,7 @@ common:
 
 	# when parsing the file system looking for libraries exclude this for all or
 	# a specific platform
-	ADDON_LIBS_EXCLUDE = libs/kerasify/
+	ADDON_INCLUDES_EXCLUDE += libs/kerasify/keras_model_test.cc
 
 linux64:
 	# binary libraries, these will be usually parsed from the file system but some

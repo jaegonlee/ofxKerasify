@@ -27,8 +27,10 @@ void ofApp::infer(){
     }
     
     // INFERENCE
+    std::vector<int> input_dim{28 * 28};
+    std::vector<int> output_dim{10}; 
     output.resize(10);// output vector should be [10]. because we have 10 digits! ;-)
-    kerasify.predict(input, output);
+    kerasify.predict(input_dim, input, output_dim, output);
     
     // Get result
     std::vector<float>::iterator maxIt = std::max_element(output.begin(), output.end());
