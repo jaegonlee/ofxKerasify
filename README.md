@@ -11,7 +11,7 @@ based on moof2k's wonderful kerasify project.
 * not thread safe
 
 * oF-iOS compatible
-* Working on [BLAS Optimization through Accelerate.framework](https://github.com/naotokui/kerasify/tree/BLAS)
+* Working on [BLAS Optimization through Accelerate.framework](https://github.com/jaegonlee/kerasify/tree/BLAS)
 
 
 # Example 1: MNIST MLP (example-mnist_mlp)
